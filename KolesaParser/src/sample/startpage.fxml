@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="StartScreenPieChart" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" style="-fx-background-color: #7AE2D1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StartScreenController">
+   <children>
+      <MenuBar fx:id="menubar_search" layoutY="-3.0" prefHeight="31.0" prefWidth="1080.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="WEB SCRAPING">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button fx:id="search_Close_Butt" layoutX="1058.0" layoutY="-3.0" mnemonicParsing="false" onAction="#search_close_act" style="-fx-background-color: red;" text="X" />
+      <ImageView fitHeight="139.0" fitWidth="120.0" layoutX="596.0" layoutY="316.0" onMouseClicked="#StartScreenPieChartAct" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/scpcb.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="234.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Development of a web scraper for data analytics of the car market" textAlignment="JUSTIFY" wrappingWidth="654.6667480468751">
+         <font>
+            <Font name="Bauhaus 93" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="918.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="by Koishybay A." textAlignment="JUSTIFY">
+         <font>
+            <Font name="Arial Narrow Bold" size="21.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="82.0" fitWidth="158.0" layoutX="482.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Arrow.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="461.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press to continue">
+         <font>
+            <Font name="Arial Narrow" size="19.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9027543067932129" green="0.9122806787490845" blue="0.34069740772247314" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.27235772357723576">
+                     <color>
+                        <Color red="0.8999999761581421" green="0.13500000536441803" blue="0.13500000536441803" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.38414634146341464">
+                     <color>
+                        <Color red="0.8999999761581421" green="0.13500000536441803" blue="0.13500000536441803" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5101626016260162">
+                     <color>
+                        <Color red="0.8999999761581421" green="0.13500000536441803" blue="0.13500000536441803" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9035087823867798" green="0.13385315239429474" blue="0.13385315239429474" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</Pane>

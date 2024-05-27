@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="StartScreenPieChart" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainPageController">
+   <children>
+      <MenuBar fx:id="mainmenubar" layoutY="-2.0" prefHeight="25.0" prefWidth="1080.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="Main_Close_Butt" layoutX="1058.0" layoutY="-3.0" mnemonicParsing="false" onAction="#Main_close_act" style="-fx-background-color: red;" text="X" />
+      <Button fx:id="back_to_start_butt" layoutX="1017.0" layoutY="-1.0" mnemonicParsing="false" onAction="#back_to_start_act" prefHeight="25.0" prefWidth="41.0" text="Back" />
+      <ImageView fitHeight="203.0" fitWidth="206.0" layoutX="86.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/mainpagetablebutt.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="179.0" fitWidth="170.0" layoutX="828.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/pie-chartmainpage.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="171.0" fitWidth="170.0" layoutX="587.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/mainpagebarchart.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="207.0" fitWidth="191.0" layoutX="329.0" layoutY="248.0" onMouseClicked="#Open_country_pie_chart" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Mainpagepiechart2.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="343.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select analysis method">
+         <font>
+            <Font name="Arial Narrow" size="50.0" />
+         </font>
+      </Text>
+      <Text layoutX="69.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data table with dynamic lookup">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="835.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Percentage of the number of cars by brand" textAlignment="JUSTIFY" wrappingWidth="180.279541015625">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="321.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chart of the share of foreign products offered to the market" textAlignment="JUSTIFY" wrappingWidth="219.0">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="589.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bar chart of the number of cars by year" textAlignment="JUSTIFY" wrappingWidth="170.2587890625">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="157.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OPEN">
+         <font>
+            <Font name="Bell MT" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Text layoutX="397.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OPEN">
+         <font>
+            <Font name="Bell MT" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Text layoutX="890.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OPEN">
+         <font>
+            <Font name="Bell MT" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <ImageView fx:id="Data_search_table" fitHeight="150.0" fitWidth="200.0" layoutX="109.0" layoutY="387.0" onMouseClicked="#Open_search_table" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Button1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Countries_pie_chart" fitHeight="150.0" fitWidth="200.0" layoutX="349.0" layoutY="387.0" onMouseClicked="#Open_country_pie_chart" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Button%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Bar_chart_by_year" fitHeight="150.0" fitWidth="200.0" layoutX="600.0" layoutY="388.0" onMouseClicked="#open_bar_chart" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Button%203.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="brand_pie_chart" fitHeight="150.0" fitWidth="200.0" layoutX="843.0" layoutY="390.0" onMouseClicked="#open_brand_pie_chart" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Button%204.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="bar_chart_text" layoutX="648.0" layoutY="468.0" onMouseClicked="#open_bar_chart_text" strokeType="OUTSIDE" strokeWidth="0.0" text="OPEN">
+         <font>
+            <Font name="Bell MT" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</Pane>

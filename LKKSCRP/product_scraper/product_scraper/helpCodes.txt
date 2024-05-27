@@ -1,0 +1,5 @@
+c:/LKKSCRP/scrapy_env/Scripts/activate.bat
+cd ./product_scraper
+scrapy crawl kolesa
+
+https://www.youtube.com/watch?time_continue=896&v=jsQQ2GyFyCg&embeds_euri=https%3A%2F%2Fscrapeops.io%2F&embeds_origin=https%3A%2F%2Fscrapeops.io&feature=emb_logo

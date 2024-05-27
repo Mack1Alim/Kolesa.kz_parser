@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="StartScreenPieChart" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BrandPieChartController">
+   <children>
+      <MenuBar fx:id="mainmenubar" layoutY="-2.0" prefHeight="25.0" prefWidth="1080.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button fx:id="bar_chart_Close_Butt" layoutX="1058.0" layoutY="-3.0" mnemonicParsing="false" onAction="#Bar_chart_close_act" style="-fx-background-color: red;" text="X" />
+      <Button fx:id="back_to_main_butt" layoutX="1017.0" layoutY="-1.0" mnemonicParsing="false" onAction="#back_to_main_act" prefHeight="25.0" prefWidth="41.0" text="Back" />
+      <Text layoutX="103.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Percentage of the number of cars by brand" textAlignment="JUSTIFY" wrappingWidth="224.01226806640625">
+         <font>
+            <Font name="Bell MT" size="31.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="69.0" fitWidth="82.0" layoutX="4.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/3589902.png" />
+         </image>
+      </ImageView>
+      <PieChart fx:id="brandPieChart" layoutX="370.0" layoutY="60.0" prefHeight="497.0" prefWidth="599.0" title="Car Brands" />
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</Pane>
